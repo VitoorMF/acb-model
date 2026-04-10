@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — ACBrasil</title>
+  <meta name="description" content="Entre em contato com a ACBrasil ou associe-se à maior rede de conselheiros do Brasil." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon">AC</div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">ACBrasil</span>
+          <span class="navbar__logo-tagline">Associação de Conselheiros</span>
+        </div>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="quem-somos.html" class="navbar__link">Quem somos</a>
+        <a href="artigos.html" class="navbar__link">Artigos</a>
+        <a href="contato.html" class="navbar__link active">Contato</a>
+        <a href="#associe-se" class="btn btn-primary navbar__cta">Associe-se</a>
+      </nav>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero__label">Fale conosco</p>
+      <h1 class="page-hero__title">Contato</h1>
+      <p class="page-hero__subtitle">
+        Tem alguma dúvida ou quer saber mais sobre a ACBrasil? Estamos aqui para ajudar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div>
+          <h2 class="contact-info__title">Vamos conversar?</h2>
+          <p class="contact-info__text">
+            Preencha o formulário ao lado ou use um dos nossos canais de contato.
+            Nossa equipe responde em até 2 dias úteis.
+          </p>
+
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <div class="contact-channel__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div>
+                <div class="contact-channel__label">E-mail</div>
+                <div class="contact-channel__value">contato@acbrasil.org.br</div>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="contact-channel__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <div class="contact-channel__label">Localização</div>
+                <div class="contact-channel__value">Brasil</div>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="contact-channel__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div>
+                <div class="contact-channel__label">LinkedIn</div>
+                <div class="contact-channel__value">Associação de Conselheiros do Brasil</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size: .85rem; font-weight: 600; color: var(--navy); margin-bottom: 12px;">Nossas redes sociais</p>
+            <div class="social-links">
+              <a href="https://linkedin.com/company/associacao-de-conselheiros-do-brasil/" target="_blank" class="social-link" title="LinkedIn">in</a>
+              <a href="https://youtube.com/channel/UCvuIeHfW0w8VUCJGOYhfM3g" target="_blank" class="social-link" title="YouTube">▶</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário Contato -->
+        <div class="form-card">
+          <h3 class="form-card__title">Envie uma mensagem</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" class="form-control" required>
+                <option value="">Selecione um assunto</option>
+                <option value="informacoes">Informações sobre a associação</option>
+                <option value="associacao">Quero me associar</option>
+                <option value="eventos">Eventos e capacitação</option>
+                <option value="parceria">Parceria institucional</option>
+                <option value="imprensa">Imprensa</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-blue" style="width: 100%; justify-content: center;">
+              Enviar mensagem
+            </button>
+
+            <div id="formSuccess" style="display: none; margin-top: 16px; padding: 14px 16px; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: var(--radius-sm); color: #065f46; font-size: .9rem;">
+              ✅ Mensagem enviada com sucesso! Retornaremos em breve.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ASSOCIE-SE ========== -->
+  <section class="section" id="associe-se" style="background: var(--offwhite);">
+    <div class="container">
+      <div style="text-align: center; max-width: 640px; margin: 0 auto 56px;">
+        <span class="section-label">Associe-se</span>
+        <h2 class="section-title">Faça parte da ACBrasil</h2>
+        <p class="section-subtitle" style="margin-inline: auto;">
+          Junte-se à maior rede de conselheiros do Brasil e tenha acesso a benefícios exclusivos.
+        </p>
+      </div>
+
+      <!-- Benefícios -->
+      <div class="highlights__grid" style="margin-bottom: 56px;">
+        <div class="highlight-card">
+          <div class="highlight-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div>
+            <div class="highlight-card__title">Capacitação</div>
+            <div class="highlight-card__text">Acesso a cursos, workshops e eventos exclusivos para membros.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <div>
+            <div class="highlight-card__title">Conteúdo exclusivo</div>
+            <div class="highlight-card__text">Pesquisas, guias e publicações disponíveis apenas para associados.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
+          <div>
+            <div class="highlight-card__title">Networking</div>
+            <div class="highlight-card__text">Acesso à comunidade de conselheiros e eventos de networking.</div>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></div>
+          <div>
+            <div class="highlight-card__title">Representação</div>
+            <div class="highlight-card__text">Voz nos fóruns e entidades que discutem governança no Brasil.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário Associação -->
+      <div style="max-width: 720px; margin: 0 auto;">
+        <div class="form-card">
+          <h3 class="form-card__title">Solicitação de associação</h3>
+          <form id="associacaoForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="assoc-nome">Nome completo *</label>
+                <input type="text" id="assoc-nome" name="nome" class="form-control" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="assoc-email">E-mail *</label>
+                <input type="email" id="assoc-email" name="email" class="form-control" placeholder="seu@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="assoc-telefone">Telefone</label>
+                <input type="tel" id="assoc-telefone" name="telefone" class="form-control" placeholder="(11) 9 9999-9999" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="assoc-empresa">Empresa</label>
+                <input type="text" id="assoc-empresa" name="empresa" class="form-control" placeholder="Nome da empresa" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="assoc-cargo">Cargo atual *</label>
+              <select id="assoc-cargo" name="cargo" class="form-control" required>
+                <option value="">Selecione seu perfil</option>
+                <option value="conselheiro-adm">Conselheiro de Administração</option>
+                <option value="conselheiro-fiscal">Conselheiro Fiscal</option>
+                <option value="conselheiro-consultivo">Conselheiro Consultivo</option>
+                <option value="aspirante">Aspirante a Conselheiro</option>
+                <option value="executivo">Executivo (CEO, CFO, etc.)</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="assoc-linkedin">LinkedIn</label>
+              <input type="url" id="assoc-linkedin" name="linkedin" class="form-control" placeholder="https://linkedin.com/in/seu-perfil" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="assoc-motivacao">Por que deseja se associar? *</label>
+              <textarea id="assoc-motivacao" name="motivacao" class="form-control" placeholder="Conte-nos um pouco sobre sua trajetória e motivação..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 14px;">
+              Enviar solicitação de associação
+            </button>
+
+            <div id="assocSuccess" style="display: none; margin-top: 16px; padding: 14px 16px; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: var(--radius-sm); color: #065f46; font-size: .9rem;">
+              ✅ Solicitação enviada! Nossa equipe entrará em contato em breve.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon">AC</div>
+            <span class="footer__logo-text">ACBrasil</span>
+          </a>
+          <p class="footer__about">Associação de Conselheiros do Brasil — promovendo excelência em governança corporativa desde 2009.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/associacao-de-conselheiros-do-brasil/" target="_blank" class="social-link" title="LinkedIn">in</a>
+            <a href="https://youtube.com/channel/UCvuIeHfW0w8VUCJGOYhfM3g" target="_blank" class="social-link" title="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navegação</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Associação</div>
+          <ul class="footer__links">
+            <li><a href="#associe-se">Associe-se</a></li>
+            <li><a href="quem-somos.html#missao">Missão e valores</a></li>
+            <li><a href="quem-somos.html#equipe">O que fazemos</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <ul class="footer__links">
+            <li><a href="mailto:contato@acbrasil.org.br">contato@acbrasil.org.br</a></li>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 ACBrasil — Todos os direitos reservados.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

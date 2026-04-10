@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigos — ACBrasil</title>
+  <meta name="description" content="Artigos, pesquisas e publicações sobre governança corporativa para conselheiros." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon">AC</div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">ACBrasil</span>
+          <span class="navbar__logo-tagline">Associação de Conselheiros</span>
+        </div>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="quem-somos.html" class="navbar__link">Quem somos</a>
+        <a href="artigos.html" class="navbar__link active">Artigos</a>
+        <a href="contato.html" class="navbar__link">Contato</a>
+        <a href="contato.html#associe-se" class="btn btn-primary navbar__cta">Associe-se</a>
+      </nav>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero__label">Conhecimento</p>
+      <h1 class="page-hero__title">Artigos & Publicações</h1>
+      <p class="page-hero__subtitle">
+        Conteúdo especializado em governança corporativa produzido por e para conselheiros.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== ARTIGOS ========== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Busca -->
+      <div style="margin-bottom: 40px; max-width: 480px;">
+        <div style="position: relative;">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Buscar artigos..."
+            style="padding-left: 44px; font-size: 1rem;"
+          />
+          <span style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; color: var(--gray-500);">🔍</span>
+        </div>
+      </div>
+
+      <!-- Filtros -->
+      <div class="categories-filter">
+        <button class="cat-btn active" data-cat="todos">Todos</button>
+        <button class="cat-btn" data-cat="governanca">Governança</button>
+        <button class="cat-btn" data-cat="esg">ESG</button>
+        <button class="cat-btn" data-cat="compliance">Compliance</button>
+        <button class="cat-btn" data-cat="estrategia">Estratégia</button>
+        <button class="cat-btn" data-cat="financas">Finanças</button>
+      </div>
+
+      <!-- Grid de artigos -->
+      <div class="articles-grid" id="articlesGrid">
+
+        <article class="article-card" data-cat="governanca">
+          <div class="article-card__thumb" style="background-image: url('https://acbrasil.org.br/cms/wp-content/uploads/2026/03/O-Mar-de-Ignorancias-e-o-Processo-Decisorio-nas-EmpresasJPG-696x348.jpg');">
+            <span class="article-card__category">Governança</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Mar 2025</span>
+              <span>5 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">O papel do conselheiro independente na governança moderna</h3>
+            <p class="article-card__excerpt">Como a independência dos conselheiros impacta as decisões estratégicas e a transparência das organizações brasileiras.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="esg">
+          <div class="article-card__thumb" style="background-image: url('https://acbrasil.org.br/cms/wp-content/uploads/2025/12/Businesses-and-the-silent-risk-of-economic-deactivation-696x464.jpg');">
+            <span class="article-card__category">ESG</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Fev 2025</span>
+              <span>7 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">ESG na pauta do conselho: desafios e oportunidades</h3>
+            <p class="article-card__excerpt">Como integrar critérios ambientais, sociais e de governança nas decisões estratégicas do conselho de administração.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="compliance">
+          <div class="article-card__thumb" style="background-image: url('https://acbrasil.org.br/cms/wp-content/uploads/2025/08/Seguranca-Cibernetica-para-PMEs-696x347.jpg');">
+            <span class="article-card__category">Compliance</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Jan 2025</span>
+              <span>6 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Compliance e gestão de riscos: a visão do conselho</h3>
+            <p class="article-card__excerpt">Entenda como o conselho deve atuar na supervisão de programas de compliance e gestão de riscos corporativos.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="estrategia">
+          <div class="article-card__thumb" style="background-image: url('https://acbrasil.org.br/cms/wp-content/uploads/2025/08/o-papel-do-mentor-em-empresas-familiares-em-processos-de-sucessao-1-696x364.jpg');">
+            <span class="article-card__category">Estratégia</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Jan 2025</span>
+              <span>8 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Planejamento estratégico: o papel ativo do conselho</h3>
+            <p class="article-card__excerpt">Como o conselho pode contribuir de forma efetiva para o processo de planejamento estratégico sem invadir a esfera executiva.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="financas">
+          <div class="article-card__thumb" style="background-image: url('https://acbrasil.org.br/cms/wp-content/uploads/2025/08/Family-Love-Letter-1-696x364.jpg');">
+            <span class="article-card__category">Finanças</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Dez 2024</span>
+              <span>6 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Letramento financeiro para conselheiros não financistas</h3>
+            <p class="article-card__excerpt">Fundamentos essenciais de análise financeira que todo conselheiro precisa dominar para exercer seu papel com eficácia.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="governanca">
+          <div class="article-card__thumb" style="background-image: url('https://picsum.photos/seed/boardroom/800/450');">
+            <span class="article-card__category">Governança</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Nov 2024</span>
+              <span>5 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Avaliação do conselho: como medir a eficácia coletiva</h3>
+            <p class="article-card__excerpt">Metodologias e boas práticas para avaliar o desempenho do conselho como um órgão coletivo e identificar oportunidades de melhoria.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="esg">
+          <div class="article-card__thumb" style="background-image: url('https://picsum.photos/seed/diversity/800/450');">
+            <span class="article-card__category">ESG</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Out 2024</span>
+              <span>9 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Diversidade no conselho: além das cotas, uma questão de eficácia</h3>
+            <p class="article-card__excerpt">Pesquisas mostram que conselhos mais diversos tomam melhores decisões. Como implementar políticas de diversidade que funcionam.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="compliance">
+          <div class="article-card__thumb" style="background-image: url('https://picsum.photos/seed/lgpd/800/450');">
+            <span class="article-card__category">Compliance</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Set 2024</span>
+              <span>7 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">LGPD e a responsabilidade do conselho na proteção de dados</h3>
+            <p class="article-card__excerpt">Como os conselheiros devem supervisionar a conformidade com a LGPD e quais são suas responsabilidades legais nesse contexto.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card" data-cat="estrategia">
+          <div class="article-card__thumb" style="background-image: url('https://picsum.photos/seed/innovation/800/450');">
+            <span class="article-card__category">Estratégia</span>
+          </div>
+          <div class="article-card__body">
+            <div class="article-card__meta">
+              <span>Ago 2024</span>
+              <span>6 min de leitura</span>
+            </div>
+            <h3 class="article-card__title">Inovação e transformação digital: o conselho como guardião</h3>
+            <p class="article-card__excerpt">O papel do conselho na supervisão da transformação digital e como garantir que a inovação esteja alinhada com a estratégia de longo prazo.</p>
+            <a href="#" class="article-card__link">Ler artigo →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">→</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner__title">Acesse conteúdo exclusivo para membros</h2>
+      <p class="cta-banner__text">
+        Associados têm acesso a pesquisas, guias e publicações exclusivas da ACBrasil.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="contato.html#associe-se" class="btn btn-primary">Associe-se agora</a>
+        <a href="contato.html" class="btn btn-secondary">Fale conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon">AC</div>
+            <span class="footer__logo-text">ACBrasil</span>
+          </a>
+          <p class="footer__about">Associação de Conselheiros do Brasil — promovendo excelência em governança corporativa desde 2009.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/associacao-de-conselheiros-do-brasil/" target="_blank" class="social-link" title="LinkedIn">in</a>
+            <a href="https://youtube.com/channel/UCvuIeHfW0w8VUCJGOYhfM3g" target="_blank" class="social-link" title="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Navegação</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Associação</div>
+          <ul class="footer__links">
+            <li><a href="contato.html#associe-se">Associe-se</a></li>
+            <li><a href="quem-somos.html#missao">Missão e valores</a></li>
+            <li><a href="quem-somos.html#equipe">O que fazemos</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contato</div>
+          <ul class="footer__links">
+            <li><a href="mailto:contato@acbrasil.org.br">contato@acbrasil.org.br</a></li>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 ACBrasil — Todos os direitos reservados.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
